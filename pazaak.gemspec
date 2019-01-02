@@ -14,4 +14,6 @@ Gem::Specification.new do |s|
   s.files         = ['lib/pazaak.rb']
   s.test_files    = ['test/test_pazaak.rb']
   s.require_paths = ['lib']
+
+  s.metadata['yard.run'] = 'yri'
 end
