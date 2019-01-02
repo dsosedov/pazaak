@@ -1,6 +1,8 @@
+require './lib/pazaak'
+
 Gem::Specification.new do |s|
   s.name          = 'pazaak'
-  s.version       = '0.0.0'
+  s.version       = Pazaak::VERSION
   s.date          = '2019-01-01'
   s.summary       = 'A popular ancient Galactic card game from the times of the Old Republic'
   s.description   = 'A pazaak game engine'
