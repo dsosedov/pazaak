@@ -10,11 +10,13 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
-  - $API_KEY
+  - 2.6
   #- ruby-head
 before_script: rake test
 script: gem build pazaak.gemspec
 deploy:
   provider: rubygems
+  api_key:
+    secure: $API_KEY
   on:
     tags: true
