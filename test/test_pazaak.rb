@@ -3,7 +3,7 @@ require 'pazaak'
 
 class PazaakTest < Minitest::Test
   def test_version
-    assert_equal('0.0.1', Pazaak::VERSION)
+    assert_equal('0.0.0', Pazaak::VERSION)
   end
 
   def test_public_constants
