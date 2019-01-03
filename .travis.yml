@@ -10,7 +10,7 @@ rvm:
   - 2.3
   - 2.4
   - 2.5
-  - 2.6
+  - $API_KEY
   #- ruby-head
 before_script: rake test
 script: gem build pazaak.gemspec
