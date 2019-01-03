@@ -17,6 +17,6 @@ script: gem build pazaak.gemspec
 deploy:
   provider: rubygems
   api_key:
-    secure: $API_KEY
+    secure: AG9puEzK/ZDJUscl0EQ946gHptN6uuBl9qSwXQghKFxPRrnXQZprAQ8v5dt80yrAwzzb0dJPGnp82vuWxtqMbugtjgMBQ2rhQXfsxLWFJgPtz3awjaDnlcDUDNkmF52Vp7pNdyOv3xV0aZ4Tt4ZDyVw+YA0othFkF+BJmuZiKpBUlFFa1/qmdFgGY8ExqvpyW4wsZbR6dZtXc/trpfxh5tbDj8RnvfEPDdU4esSHJbF/US4YgXuqoS17RQvhPS0nFjuBoUz5NrjMrKSBteMHJJHxpG4wn/wf4OYSsfHmMdERDqhqXk0zNRpCOAcms7ezpYnUI6UpyTq0m2oY1650QLKJE+LJYp7i2RTG6WkFTjS0xhmZx/D/bfh4GwyAwuIV7X+a7pLFdftRW0HWC3vC1hdggO0Zq5b17H3CG0LS/GJBQYPV4BgY/zJt79OpYcPbLposksekbNyAEK1SW/qkTw6M/UQzMKfGFkksh9A+mzhApe/CNaefwlumWc5rLlyzG0e4TNLOAjfMV5lkUgdaK3oy5BBpVieDV+MQW/cIZjJm48O6SmIOm0RzTt239UgqpzzzlIv/V3QYKQpvtnLhRe9ADg/ULjawA2Ss5dU1nKot3u50xOD5U7tslVLgJWTfjjnwVvqyITolig0/C1NKfYdIciGTugHbHpPIzfl+8og=
   on:
     tags: true
