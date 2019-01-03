@@ -1,7 +1,7 @@
 # The root namespace
 module Pazaak
   MAX = 0
-  MIN = 0
+  MIN = 1
   REV = 0
 
   # Gem version
