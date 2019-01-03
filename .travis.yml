@@ -15,5 +15,6 @@ rvm:
 before_script: rake test
 script: gem build pazaak.gemspec
 deploy:
+  provider: rubygems
   on:
     tags: true
