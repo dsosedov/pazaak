@@ -1,3 +1,6 @@
+require_relative 'pazaak/game'
+require_relative 'pazaak/player'
+
 # The root namespace
 module Pazaak
   MAX = 0
