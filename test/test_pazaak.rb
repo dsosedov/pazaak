@@ -7,7 +7,7 @@ class PazaakTest < Minitest::Test
   end
 
   def test_public_constants
-    assert_equal([:Card, :FlippableCard, :Game, :Player, :VERSION], Pazaak.constants.sort)
+    assert_equal([:Card, :Game, :Player, :PlayerCard, :PlayerFlippableCard, :VERSION], Pazaak.constants.sort)
   end
 
   def test_private_constants_max

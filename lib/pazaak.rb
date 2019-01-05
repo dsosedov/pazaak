@@ -1,7 +1,8 @@
 require_relative 'pazaak/card'
-require_relative 'pazaak/flippable_card'
 require_relative 'pazaak/game'
 require_relative 'pazaak/player'
+require_relative 'pazaak/player_card'
+require_relative 'pazaak/player_flippable_card'
 
 # The root namespace
 module Pazaak

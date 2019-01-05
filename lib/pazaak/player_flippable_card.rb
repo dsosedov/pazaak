@@ -1,5 +1,5 @@
 module Pazaak
-  class FlippableCard < Card
+  class PlayerFlippableCard < PlayerCard
     def flip
       @value = -1 * @value
     end
