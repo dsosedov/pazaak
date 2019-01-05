@@ -9,4 +9,12 @@ class GameTest < Minitest::Test
     assert_equal('Ujaa', game.player_one.name)
     assert_equal('Elinda', game.player_two.name)
   end
+
+  def test_start_game
+    player1 = Pazaak::Player.new('Niklos')
+    player2 = Pazaak::Player.new('Zax')
+    game = Pazaak::Game.new(player1, player2)
+    a = game.start
+    refute_empty(a)
+  end
 end
