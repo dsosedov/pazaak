@@ -1,3 +1,4 @@
+require_relative 'pazaak/card'
 require_relative 'pazaak/game'
 require_relative 'pazaak/player'
 
