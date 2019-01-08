@@ -15,4 +15,11 @@ class GameTest < Minitest::Test
     player.hit(Pazaak::Card.new(5))
     assert_equal(15, player.total)
   end
+
+  def test_stand
+    player = Pazaak::Player.new('Mission')
+    refute(player.is_standing)
+    player.stand
+    assert(player.is_standing)
+  end
 end
