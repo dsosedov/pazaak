@@ -2,13 +2,14 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
+require 'date'
 require_relative 'lib/pazaak'
 
 Gem::Specification.new do |s|
   s.name          = 'pazaak'
   s.version       = Pazaak::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2019-01-01'
+  s.date          = Date.today.to_s
   s.summary       = 'A popular ancient Galactic card game from the times of the Old Republic'
   s.description   = 'A pazaak game engine'
   s.authors       = ['Dmitrii Sosedov']
