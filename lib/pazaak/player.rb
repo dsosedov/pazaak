@@ -9,6 +9,7 @@ module Pazaak
 
     def hit(card)
       @cards.push(card)
+      @is_standing = false
     end
 
     def total

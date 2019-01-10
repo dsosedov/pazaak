@@ -30,5 +30,7 @@ class GameTest < Minitest::Test
     refute(player.is_standing)
     player.stand
     assert(player.is_standing)
+    player.hit(Pazaak::Card.new(10))
+    refute(player.is_standing)
   end
 end
