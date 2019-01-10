@@ -27,6 +27,10 @@ module Pazaak
       nil
     end
 
+    def deal
+      @current_player.hit(@deck.pop)
+    end
+
     def deck_count
       @deck.count
     end
