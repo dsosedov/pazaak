@@ -1,6 +1,6 @@
 module Pazaak
   class Game
-    attr_reader :player_one, :player_two
+    attr_reader :current_player, :player_one, :player_two
 
     def initialize(player_one, player_two)
       @player_one = player_one
@@ -17,10 +17,18 @@ module Pazaak
         Card.new(9),
         Card.new(10),
       ] * 4
+      nil
     end
 
     def start
       @deck.shuffle!
+      prng = Random.new
+      @current_player = prng.rand(1..2) == 1 ? @player_one : @player_two
+      nil
+    end
+
+    def deck_count
+      @deck.count
     end
   end
 end

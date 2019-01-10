@@ -14,7 +14,7 @@ class GameTest < Minitest::Test
     player1 = Pazaak::Player.new('Niklos')
     player2 = Pazaak::Player.new('Zax')
     game = Pazaak::Game.new(player1, player2)
-    a = game.start
-    refute_empty(a)
+    game.start
+    refute_nil(game.current_player)
   end
 end
